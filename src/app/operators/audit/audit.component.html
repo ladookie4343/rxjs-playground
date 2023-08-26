@@ -1,0 +1,8 @@
+<h1>audit</h1>
+<p>
+  Description: emisions will be ignored until the inner observable emits. In this example you can click anywhere on the page to get the x-coordinate of where you clicked,
+  but the result will not be displayed until you click the button which emits on the inner observable. And then, you will only get the most recent x-coordinate
+</p>
+<button (click)="onClick()">click</button>
+<p>clicks: {{docClicks$ | async | json }}</p>
+<p>result: {{result$ | async | json}}</p>

@@ -1,0 +1,4 @@
+<h1>buffer</h1>
+<p>Collects values from the past as an array, and emits that array only when another Observable emits. In this example, you can click anywhere on the page and then click the button and then you'll see all the x coordiantes of the clicks.</p>
+<button (click)="onClick()">click</button>
+<p>{{result$ | async | json}}</p>
