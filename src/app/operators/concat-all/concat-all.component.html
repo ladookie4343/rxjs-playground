@@ -1,0 +1,12 @@
+<h1>concatAll</h1>
+<pre>
+  higherOrder$ = this.docClicks$.pipe(
+    map(() => interval(1000).pipe(take(4)))
+  );
+  
+  result$ = this.higherOrder$.pipe(concatAll())
+</pre>
+<p>Description: Flattens an Observable-of-Observables by putting one inner Observable after the other.</p>
+<p>clicks: {{docClicks$ | async | json}}</p>
+<p>higherOrder: {{higherOrder$ | async | json}}</p>
+<p>result: {{result$ | async | json}}</p>

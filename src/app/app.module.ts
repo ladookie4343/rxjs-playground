@@ -6,6 +6,13 @@ import { AuditComponent } from './operators/audit/audit.component';
 import { AuditTimeComponent } from './operators/audit-time/audit-time.component';
 import { BufferComponent } from './operators/buffer/buffer.component';
 import { BufferCountComponent } from './operators/buffer-count/buffer-count.component';
+import { BufferTimeComponent } from './operators/buffer-time/buffer-time.component';
+import { BufferToggleComponent } from './operators/buffer-toggle/buffer-toggle.component';
+import { BufferWhenComponent } from './operators/buffer-when/buffer-when.component';
+import { CatchErrorComponent } from './operators/catch-error/catch-error.component';
+import { CombineLatestAllComponent } from './operators/combine-latest-all/combine-latest-all.component';
+import { CombineLatestWithComponent } from './operators/combine-latest-with/combine-latest-with.component';
+import { ConcatAllComponent } from './operators/concat-all/concat-all.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +20,14 @@ import { BufferCountComponent } from './operators/buffer-count/buffer-count.comp
     AuditComponent,
     AuditTimeComponent,
     BufferComponent,
-    BufferCountComponent
+    BufferCountComponent,
+    BufferTimeComponent,
+    BufferToggleComponent,
+    BufferWhenComponent,
+    CatchErrorComponent,
+    CombineLatestAllComponent,
+    CombineLatestWithComponent,
+    ConcatAllComponent
   ],
   imports: [
     BrowserModule

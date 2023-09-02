@@ -1,0 +1,9 @@
+<h1>bufferWhen</h1>
+<pre>
+  result$ = this.clicks$.pipe(
+    bufferWhen(() => timer(1000))
+  );
+</pre>
+<p>Description: Collects values from the past as an array. When it starts collecting values, it calls a function that returns an Observable that tells when to close the buffer and restart collecting.</p>
+<p>clicks: {{clicks$ | async | json }}</p>
+<p>result: {{result$ | async | json}}</p>

@@ -1,3 +1,9 @@
 <h1>audit time</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    auditTime(2000)
+  );
+</pre>
 <p>When it sees a source value, it ignores that plus the next ones for x milliseconds, and then it emits the most recent value from the source.</p>
-<p>{{result$ | async}}</p>
+<p>clicks: {{docClicks$ | async | json }}</p>
+<p>result: {{result$ | async}}</p>

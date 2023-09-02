@@ -1,0 +1,7 @@
+<h1>bufferTime</h1>
+<code>
+  result$ = this.clicks$.pipe(bufferTime(3000));
+</code>
+<p>Description: Collects values from the past as an array, and emits those arrays periodically in time.</p>
+<p>clicks: {{clicks$ | async | json }}</p>
+<p>result: {{result$ | async | json}}</p>

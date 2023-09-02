@@ -1,0 +1,11 @@
+<h1>bufferToggle</h1>
+<pre>
+  result$ = this.clicks$.pipe(
+    bufferToggle(this.clicks$, 
+      x => x > 500 ? of(null) : EMPTY
+    )
+  );
+</pre>
+<p>I don't get this one. And no one uses it.</p>
+<p>clicks: {{clicks$ | async | json }}</p>
+<p>result: {{result$ | async | json}}</p>

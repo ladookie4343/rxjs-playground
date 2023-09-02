@@ -3,14 +3,14 @@
 <button (click)="setSelection('auditTime')">auditTime</button>
 <button (click)="setSelection('buffer')">buffer</button>
 <button (click)="setSelection('bufferCount')">bufferCount</button>
-<!-- <button (click)="setSelection('bufferTime')">bufferTime</button>
+<button (click)="setSelection('bufferTime')">bufferTime</button>
 <button (click)="setSelection('bufferToggle')">bufferToggle</button>
 <button (click)="setSelection('bufferWhen')">bufferWhen</button>
 <button (click)="setSelection('catchError')">catchError</button>
 <button (click)="setSelection('combineLatestAll')">combineLatestAll</button>
 <button (click)="setSelection('combineLatestWith')">combineLatestWith</button>
 <button (click)="setSelection('concatAll')">concatAll</button>
-<button (click)="setSelection('concatMap')">concatMap</button>
+<!-- <button (click)="setSelection('concatMap')">concatMap</button>
 <button (click)="setSelection('concatWith')">concatWith</button>
 <button (click)="setSelection('connect')">connect</button>
 <button (click)="setSelection('count')">count</button>
@@ -95,4 +95,11 @@
   <app-audit-time *ngIf="pageData.selection === 'auditTime'"></app-audit-time>
   <app-buffer *ngIf="pageData.selection === 'buffer'"></app-buffer>
   <app-buffer-count *ngIf="pageData.selection === 'bufferCount'"></app-buffer-count>
+  <app-buffer-time *ngIf="pageData.selection === 'bufferTime'"></app-buffer-time>
+  <app-buffer-toggle *ngIf="pageData.selection === 'bufferToggle'"></app-buffer-toggle>
+  <app-buffer-when *ngIf="pageData.selection === 'bufferWhen'"></app-buffer-when>
+  <app-catch-error *ngIf="pageData.selection === 'catchError'"></app-catch-error>
+  <app-combine-latest-all *ngIf="pageData.selection === 'combineLatestAll'"></app-combine-latest-all>
+  <app-combine-latest-with *ngIf="pageData.selection === 'combineLatestWith'"></app-combine-latest-with>
+  <app-concat-all *ngIf="pageData.selection === 'concatAll'"></app-concat-all>
 </ng-container>

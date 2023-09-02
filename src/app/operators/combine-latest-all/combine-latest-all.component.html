@@ -1,0 +1,13 @@
+<h1>combineLatestAll</h1>
+<pre>
+  higherOrder$ = this.docClicks$.pipe(
+    map(() => interval(Math.random() * 2000).pipe(take(10))),
+    take(3)
+  );
+
+  result$ = this.higherOrder$.pipe(combineLatestAll());
+</pre>
+<p>Description: combineLatestAll takes an Observable of Observables, and collects all Observables from it. Once the outer Observable completes, it subscribes to all collected Observables and combines their values using the combineLatest strategy</p>
+<p>clicks: {{docClicks$ | async | json}}</p>
+<p>higherOrder: {{higherOrder$ | async | json}}</p>
+<p>result: {{result$ | async | json}}</p>

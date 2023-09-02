@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { Subject, buffer, fromEvent, map } from 'rxjs';
+import { Subject, buffer, debounceTime, fromEvent, map } from 'rxjs';
 
 @Component({
   selector: 'app-buffer',
   templateUrl: './buffer.component.html',
 })
 export class BufferComponent {
-  buttonClicks$ = new Subject();
+  buttonClick$ = new Subject();
 
   docClicks$ = fromEvent(document, 'click').pipe(
     map((event: Event) => event as MouseEvent),
@@ -14,10 +14,16 @@ export class BufferComponent {
   );
   
   result$ = this.docClicks$.pipe(
-    buffer(this.buttonClicks$)
+    buffer(this.buttonClick$)
+  );
+
+  intermediateResult$ = this.docClicks$.pipe(debounceTime(500));
+
+  result2$ = this.docClicks$.pipe(
+    buffer(this.docClicks$.pipe(debounceTime(500)))
   );
   
   onClick() {
-    this.buttonClicks$.next(null);
+    this.buttonClick$.next(null);
   }
 }

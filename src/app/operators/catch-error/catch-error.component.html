@@ -1,0 +1,14 @@
+<h1>catchError</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    map(value =&gt; {{ '{' }}
+      if (value &gt; 100 &amp;&amp; value &lt; 300) {{ '{' }}
+        throw 'Error!';
+      {{ '}' }}
+      return value;
+    {{ '}' }}),
+    catchError(_ =&gt; of('Bad Click'))
+  );
+</pre>
+<p>Description: This operator handles errors, but forwards along all other events to the resulting observable. If the source observable terminates with an error, it will map that error to a new observable, subscribe to it, and forward all of its events to the resulting observable.</p>
+<p>result: {{result$ | async | json}}</p>
