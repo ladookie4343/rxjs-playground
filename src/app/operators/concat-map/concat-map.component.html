@@ -1,0 +1,11 @@
+<h1>concatMap</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    concatMap(() => interval(1000).pipe(take(4)))
+  );
+</pre>
+<p>
+  Returns an Observable that emits items based on applying a function that you supply to each item emitted by the source Observable, where that function returns an (so-called "inner") Observable. Each new inner Observable is concatenated with the previous inner Observable.
+</p>
+<p>clicks: {{docClicks$ | async | json }}</p>
+<p>result: {{result$ | async | json}}</p>

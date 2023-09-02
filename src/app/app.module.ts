@@ -13,6 +13,7 @@ import { CatchErrorComponent } from './operators/catch-error/catch-error.compone
 import { CombineLatestAllComponent } from './operators/combine-latest-all/combine-latest-all.component';
 import { CombineLatestWithComponent } from './operators/combine-latest-with/combine-latest-with.component';
 import { ConcatAllComponent } from './operators/concat-all/concat-all.component';
+import { ConcatMapComponent } from './operators/concat-map/concat-map.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ConcatAllComponent } from './operators/concat-all/concat-all.component'
     CatchErrorComponent,
     CombineLatestAllComponent,
     CombineLatestWithComponent,
-    ConcatAllComponent
+    ConcatAllComponent,
+    ConcatMapComponent
   ],
   imports: [
     BrowserModule
