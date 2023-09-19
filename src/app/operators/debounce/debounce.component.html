@@ -1,0 +1,12 @@
+<h1>debounce</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    scan(i => ++i, 1),
+    debounce(i => interval(50 * i))
+  );
+</pre>
+<p>
+  Description: Emits a notification from the source Observable only after a particular time span determined by another Observable has passed without another source emission.
+</p>
+<p>clicks: {{docClicks$ | async }}</p>
+<p>result: {{result$ | async}}</p>

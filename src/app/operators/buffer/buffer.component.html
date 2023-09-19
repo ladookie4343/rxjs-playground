@@ -10,10 +10,10 @@
 <p>result: {{result$ | async | json}}</p>
 
 <p>Another cool pattern to use with buffer is to combine it with debounce time. This waits for something to stop happening and then takes all the values and emits them.</p>
-<code>
+<pre>
   this.docClicks$.pipe(
     buffer(this.docClicks$.pipe(debounceTime(500)))
   );
-</code>
+</pre>
 <p>intermediate result: {{intermediateResult$ | async | json }}</p>
 <p>result2: {{result2$ | async | json}}</p>

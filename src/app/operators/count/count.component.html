@@ -1,0 +1,13 @@
+<h1>count</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    takeUntil(this.buttonClicks$),
+    count()
+  );
+</pre>
+<p>
+  Description: Counts the number of emissions on the source and emits that number when the source completes.
+</p>
+<button (click)="onClick()">click</button>
+<p>clicks: {{docClicks$ | async }}</p>
+<p>result: {{result$ | async}}</p>

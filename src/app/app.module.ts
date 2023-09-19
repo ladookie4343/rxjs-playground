@@ -14,6 +14,10 @@ import { CombineLatestAllComponent } from './operators/combine-latest-all/combin
 import { CombineLatestWithComponent } from './operators/combine-latest-with/combine-latest-with.component';
 import { ConcatAllComponent } from './operators/concat-all/concat-all.component';
 import { ConcatMapComponent } from './operators/concat-map/concat-map.component';
+import { ConcatWithComponent } from './operators/concat-with/concat-with.component';
+import { ConnectComponent } from './operators/connect/connect.component';
+import { CountComponent } from './operators/count/count.component';
+import { DebounceComponent } from './operators/debounce/debounce.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ConcatMapComponent } from './operators/concat-map/concat-map.component'
     CombineLatestAllComponent,
     CombineLatestWithComponent,
     ConcatAllComponent,
-    ConcatMapComponent
+    ConcatMapComponent,
+    ConcatWithComponent,
+    ConnectComponent,
+    CountComponent,
+    DebounceComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,17 @@
+<h1>concatWith</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    map(() => 'click'),
+    take(3),
+    concatWith(
+      this.mouseMoves$.pipe(
+        map(() => 'move')
+      )
+    )
+  );
+</pre>
+<p>
+  Listen for one mouse click, then listen for all mouse moves.
+</p>
+<p>clicks: {{docClicks$ | async | json }}</p>
+<p>result: {{result$ | async | json}}</p>

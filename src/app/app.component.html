@@ -11,11 +11,11 @@
 <button (click)="setSelection('combineLatestWith')">combineLatestWith</button>
 <button (click)="setSelection('concatAll')">concatAll</button>
 <button (click)="setSelection('concatMap')">concatMap</button>
-<!-- <button (click)="setSelection('concatWith')">concatWith</button>
+<button (click)="setSelection('concatWith')">concatWith</button>
 <button (click)="setSelection('connect')">connect</button>
 <button (click)="setSelection('count')">count</button>
 <button (click)="setSelection('debounce')">debounce</button>
-<button (click)="setSelection('debounceTime')">debounceTime</button>
+<!-- <button (click)="setSelection('debounceTime')">debounceTime</button>
 <button (click)="setSelection('defaultIfEmpty')">defaultIfEmpty</button>
 <button (click)="setSelection('delay')">delay</button>
 <button (click)="setSelection('delayWhen')">delayWhen</button>
@@ -103,4 +103,8 @@
   <app-combine-latest-with *ngIf="pageData.selection === 'combineLatestWith'"></app-combine-latest-with>
   <app-concat-all *ngIf="pageData.selection === 'concatAll'"></app-concat-all>
   <app-concat-map *ngIf="pageData.selection === 'concatMap'"></app-concat-map>
+  <app-concat-with *ngIf="pageData.selection === 'concatWith'"></app-concat-with>
+  <app-connect *ngIf="pageData.selection === 'connect'"></app-connect>
+  <app-count *ngIf="pageData.selection === 'count'"></app-count>
+  <app-debounce *ngIf="pageData.selection === 'debounce'"></app-debounce>
 </ng-container>
