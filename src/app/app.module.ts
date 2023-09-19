@@ -18,6 +18,13 @@ import { ConcatWithComponent } from './operators/concat-with/concat-with.compone
 import { ConnectComponent } from './operators/connect/connect.component';
 import { CountComponent } from './operators/count/count.component';
 import { DebounceComponent } from './operators/debounce/debounce.component';
+import { DebounceTimeComponent } from './operators/debounce-time/debounce-time.component';
+import { DefaultIfEmptyComponent } from './operators/default-if-empty/default-if-empty.component';
+import { DelayComponent } from './operators/delay/delay.component';
+import { DelayWhenComponent } from './operators/delay-when/delay-when.component';
+import { DematerializeComponent } from './operators/dematerialize/dematerialize.component';
+import { DistinctComponent } from './operators/distinct/distinct.component';
+import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +44,14 @@ import { DebounceComponent } from './operators/debounce/debounce.component';
     ConcatWithComponent,
     ConnectComponent,
     CountComponent,
-    DebounceComponent
+    DebounceComponent,
+    DebounceTimeComponent,
+    DefaultIfEmptyComponent,
+    DelayComponent,
+    DelayWhenComponent,
+    DematerializeComponent,
+    DistinctComponent,
+    DistinctUntilChangedComponent
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,11 @@
+<h1>distinct</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    distinct()
+  );
+</pre>
+<p>
+Description: Returns an Observable that emits all items emitted by the source Observable that are distinct by comparison from previous items.
+</p>
+<p>clicks: {{docClicks$ | async}}</p>
+<p>result: {{result$ | async}}</p>

@@ -1,0 +1,12 @@
+<h1>delay</h1>
+<pre>
+  result$ = this.docClicks$.pipe(delay(1000));
+
+  result2$ = this.docClicks$.pipe(delay(new Date('September 19, 2023 17:57')))
+</pre>
+<p>
+  Description: Delays the emission of items from the source Observable by a given timeout or until a given Date.
+</p>
+<p>clicks: {{docClicks$ | async }}</p>
+<p>result: {{result$ | async}}</p>
+<p>result2: {{result2$ | async}}</p>

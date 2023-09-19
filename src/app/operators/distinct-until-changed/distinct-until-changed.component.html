@@ -1,0 +1,11 @@
+<h1>distinctUntilChanged</h1>
+<pre>
+  result$ = this.docClicks$.pipe(
+    distinctUntilChanged()
+  );
+</pre>
+<p>
+Description: Returns a result Observable that emits all values pushed by the source observable if they are distinct in comparison to the last value the result observable emitted.
+</p>
+<p>clicks: {{docClicks$ | async}}</p>
+<p>result: {{result$ | async}}</p>

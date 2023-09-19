@@ -1,0 +1,15 @@
+<h1>defaultIfEmpty</h1>
+<pre>
+  clicksBeforeFive$ = this.docClicks$.pipe(
+    takeUntil(interval(5000))
+  );
+
+  result$ = this.clicksBeforeFive$.pipe(
+    defaultIfEmpty('no clicks')
+  );
+</pre>
+<p>
+  Description: Emits a given value if the source Observable completes without emitting any next value, otherwise mirrors the source Observable.
+</p>
+<p>clicks: {{docClicks$ | async }}</p>
+<p>result: {{result$ | async}}</p>

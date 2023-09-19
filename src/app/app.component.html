@@ -15,14 +15,14 @@
 <button (click)="setSelection('connect')">connect</button>
 <button (click)="setSelection('count')">count</button>
 <button (click)="setSelection('debounce')">debounce</button>
-<!-- <button (click)="setSelection('debounceTime')">debounceTime</button>
+<button (click)="setSelection('debounceTime')">debounceTime</button>
 <button (click)="setSelection('defaultIfEmpty')">defaultIfEmpty</button>
 <button (click)="setSelection('delay')">delay</button>
 <button (click)="setSelection('delayWhen')">delayWhen</button>
 <button (click)="setSelection('dematerialize')">dematerialize</button>
 <button (click)="setSelection('distinct')">distinct</button>
 <button (click)="setSelection('distinctUntilChanged')">distinctUntilChanged</button>
-<button (click)="setSelection('distinctUntilKeyChanged')">distinctUntilKeyChanged</button>
+<!-- <button (click)="setSelection('distinctUntilKeyChanged')">distinctUntilKeyChanged</button>
 <button (click)="setSelection('elementAt')">elementAt</button>
 <button (click)="setSelection('endWith')">endWith</button>
 <button (click)="setSelection('every')">every</button>
@@ -107,4 +107,11 @@
   <app-connect *ngIf="pageData.selection === 'connect'"></app-connect>
   <app-count *ngIf="pageData.selection === 'count'"></app-count>
   <app-debounce *ngIf="pageData.selection === 'debounce'"></app-debounce>
+  <app-debounce-time *ngIf="pageData.selection === 'debounceTime'"></app-debounce-time>
+  <app-default-if-empty *ngIf="pageData.selection === 'defaultIfEmpty'"></app-default-if-empty>
+  <app-delay *ngIf="pageData.selection === 'delay'"></app-delay>
+  <app-delay-when *ngIf="pageData.selection === 'delayWhen'"></app-delay-when>
+  <app-dematerialize *ngIf="pageData.selection === 'dematerialize'"></app-dematerialize>
+  <app-distinct *ngIf="pageData.selection === 'distinct'"></app-distinct>
+  <app-distinct-until-changed *ngIf="pageData.selection === 'distinctUntilChanged'"></app-distinct-until-changed>
 </ng-container>
